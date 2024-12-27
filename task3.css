@@ -1,0 +1,74 @@
+/* General styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
+}
+
+.game-container {
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+/* Board Styles */
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.board div {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border: 2px solid #333;
+  font-size: 32px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.board div:hover {
+  background-color: #e0e0e0;
+}
+
+/* Status and Reset button */
+.game-status {
+  margin-top: 20px;
+}
+
+#status {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
